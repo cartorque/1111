@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Winston Smile Design Dental Care | Best Dental Clinic in Palarivattom Ernakulam</title>
+  <meta name="description" content="Advanced dental care, smile design, implants, and cosmetic dentistry in Palarivattom Ernakulam with expert dentists and modern equipment." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandTeal: '#0fb9b1',
+            slateSoft: '#eef4f8'
+          },
+          boxShadow: {
+            soft: '0 15px 40px rgba(15, 185, 177, 0.15)'
+          },
+          backgroundImage: {
+            'hero-grad': 'radial-gradient(circle at 20% 20%, rgba(15,185,177,.35), transparent 40%), radial-gradient(circle at 80% 0%, rgba(88,166,255,.35), transparent 40%), linear-gradient(120deg, #ffffff 0%, #edf6ff 45%, #f6fffd 100%)'
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui; }
+    .glass {
+      background: rgba(255, 255, 255, 0.62);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,.45);
+    }
+    .floating-shape {
+      animation: float 8s ease-in-out infinite;
+    }
+    .floating-shape:nth-child(2){ animation-delay: 1.5s; }
+    .floating-shape:nth-child(3){ animation-delay: 3s; }
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-16px); }
+    }
+    .masonry { column-count: 1; column-gap: 1rem; }
+    @media(min-width: 768px){ .masonry { column-count: 2; } }
+    @media(min-width: 1024px){ .masonry { column-count: 4; } }
+    .masonry-item { break-inside: avoid; margin-bottom: 1rem; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Dr. Winston's Smile Design Dental Care",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "CC43/219A, Kalavath Rd, Kesaveeyam, Palarivattom",
+      "addressLocality": "Ernakulam",
+      "addressRegion": "Kerala",
+      "postalCode": "682025",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-484-234-0877",
+    "areaServed": "Palarivattom, Ernakulam",
+    "medicalSpecialty": "Dentistry",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "130"
+    }
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-700 overflow-x-hidden">
+  <div id="loader" class="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center gap-4">
+    <div class="w-16 h-16 rounded-full border-4 border-slate-200 border-t-brandTeal animate-spin"></div>
+    <p class="text-sm tracking-[0.2em] text-slate-500">LOADING CARE...</p>
+  </div>
+
+  <div id="gradientBg" class="fixed inset-0 pointer-events-none -z-10 bg-hero-grad"></div>
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="floating-shape absolute top-20 left-10 w-32 h-32 rounded-full bg-brandTeal/10 blur-2xl"></div>
+    <div class="floating-shape absolute top-1/2 right-12 w-44 h-44 rounded-full bg-blue-300/20 blur-3xl"></div>
+    <div class="floating-shape absolute bottom-20 left-1/3 w-36 h-36 rounded-full bg-cyan-200/20 blur-2xl"></div>
+  </div>
+
+  <nav class="fixed top-0 w-full z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="font-semibold text-slate-800">Dr Winston's <span class="text-brandTeal">Smile Design</span></a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a class="hover:text-brandTeal transition" href="#home">Home</a>
+        <a class="hover:text-brandTeal transition" href="#about">About</a>
+        <a class="hover:text-brandTeal transition" href="#services">Services</a>
+        <a class="hover:text-brandTeal transition" href="#gallery">Smile Gallery</a>
+        <a class="hover:text-brandTeal transition" href="#reviews">Reviews</a>
+        <a class="hover:text-brandTeal transition" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="px-4 py-2 rounded-full bg-brandTeal text-white text-sm shadow-soft hover:-translate-y-0.5 transition">Book Appointment</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="min-h-screen flex items-center pt-24">
+      <div class="max-w-7xl mx-auto w-full px-6 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal space-y-6">
+          <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandTeal/10 text-brandTeal text-xs font-semibold tracking-wide">Premium Dental Care • Palarivattom</p>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight text-slate-900">Transform Your Smile with Advanced Dental Care</h1>
+          <p class="text-lg text-slate-600 max-w-xl">Providing trusted and modern dental treatments in Palarivattom, Ernakulam with experienced doctors and advanced equipment.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="px-6 py-3 rounded-full bg-brandTeal text-white font-medium shadow-soft hover:-translate-y-1 transition">Book Appointment</a>
+            <a href="tel:04842340877" class="px-6 py-3 rounded-full bg-white border border-slate-200 font-medium hover:border-brandTeal hover:text-brandTeal transition">Call Now</a>
+          </div>
+        </div>
+        <div class="reveal relative">
+          <img class="rounded-3xl shadow-2xl w-full object-cover" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80" alt="Modern dental clinic with smiling patient" loading="lazy"/>
+          <div class="absolute -top-6 -left-5 glass px-4 py-2 rounded-2xl text-2xl floating-shape">🦷</div>
+          <div class="absolute top-1/2 -right-4 glass px-4 py-2 rounded-2xl text-2xl floating-shape">🪥</div>
+          <div class="absolute -bottom-6 left-10 glass px-4 py-2 rounded-2xl text-2xl floating-shape">😊</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24">
+      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+        <img class="reveal rounded-3xl shadow-xl w-full object-cover h-[450px]" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" alt="Dentist discussing treatment with patient" loading="lazy"/>
+        <div class="space-y-5">
+          <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900">Trusted Dental Care with Modern Technology</h2>
+          <p class="reveal text-slate-600">Dr. Winston's Smile Design Dental Care is a trusted dental clinic offering comprehensive oral healthcare services using modern technology and patient-centered care.</p>
+          <p class="reveal text-slate-600">We provide personalized treatment for patients of all ages with a focus on comfort, safety, and long-term dental health.</p>
+          <div class="grid sm:grid-cols-2 gap-4 pt-4">
+            <div class="reveal glass rounded-2xl p-4 shadow-soft"><p class="text-2xl font-bold text-brandTeal counter" data-target="4.7">0</p><p class="text-sm">⭐ Google Rating</p></div>
+            <div class="reveal glass rounded-2xl p-4 shadow-soft"><p class="text-2xl font-bold text-brandTeal">👨‍⚕️</p><p class="text-sm">Experienced Doctors</p></div>
+            <div class="reveal glass rounded-2xl p-4 shadow-soft"><p class="text-2xl font-bold text-brandTeal counter" data-target="100">0</p><p class="text-sm">😊 Happy Patients</p></div>
+            <div class="reveal glass rounded-2xl p-4 shadow-soft"><p class="text-2xl font-bold text-brandTeal">🦷</p><p class="text-sm">Modern Dental Equipment</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-24 bg-slateSoft/50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">Comprehensive Dental Services</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">🦷 Smile Design</h3><p class="text-sm">Customized smile enhancement plans for confidence and aesthetics.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">✨ Cosmetic Dentistry</h3><p class="text-sm">Veneers, contouring and smile corrections with natural results.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">🔩 Dental Implants</h3><p class="text-sm">Long-lasting tooth replacement with precision implant techniques.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">🤍 Teeth Whitening</h3><p class="text-sm">Safe whitening solutions for brighter, healthy-looking teeth.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">🛡 Root Canal Treatment</h3><p class="text-sm">Pain-relieving and tooth-saving root canal procedures.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">📐 Orthodontics</h3><p class="text-sm">Alignment solutions including braces and modern clear systems.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">🌿 Gum Treatment</h3><p class="text-sm">Preventive and restorative periodontal treatments.</p></article>
+          <article class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-soft transition"><h3 class="font-semibold text-slate-900 mb-2">🪥 Dental Cleaning</h3><p class="text-sm">Professional scaling and polishing for lasting oral hygiene.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">Smile Gallery</h2>
+        <div class="masonry">
+          <img class="masonry-item reveal rounded-2xl w-full cursor-pointer hover:scale-[1.02] transition duration-300" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" alt="Smile transformation consultation" loading="lazy" />
+          <img class="masonry-item reveal rounded-2xl w-full cursor-pointer hover:scale-[1.02] transition duration-300" src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=700&q=80" alt="Modern dental clinic interior" loading="lazy" />
+          <img class="masonry-item reveal rounded-2xl w-full cursor-pointer hover:scale-[1.02] transition duration-300" src="https://images.unsplash.com/photo-1609207825181-52d3214556be?auto=format&fit=crop&w=700&q=80" alt="Dental procedure with modern equipment" loading="lazy" />
+          <img class="masonry-item reveal rounded-2xl w-full cursor-pointer hover:scale-[1.02] transition duration-300" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Happy patient after dental care" loading="lazy" />
+          <img class="masonry-item reveal rounded-2xl w-full cursor-pointer hover:scale-[1.02] transition duration-300" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80" alt="Dentist and patient smiling" loading="lazy" />
+          <img class="masonry-item reveal rounded-2xl w-full cursor-pointer hover:scale-[1.02] transition duration-300" src="https://images.unsplash.com/photo-1643297654416-0574fdca26d8?auto=format&fit=crop&w=700&q=80" alt="Advanced dental procedure room" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-slateSoft/50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="reveal text-3xl md:text-4xl font-bold text-slate-900 text-center">Patient Reviews</h2>
+        <p class="reveal text-center mt-3 text-brandTeal font-semibold text-lg">⭐ 4.7 / 5 from 130+ reviews</p>
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <div class="reveal glass rounded-2xl p-6 shadow-soft"><p class="font-semibold text-slate-900">George Varghese</p><p class="text-sm mt-2">"They have very efficient doctors, caring staff and clean environment."</p></div>
+          <div class="reveal glass rounded-2xl p-6 shadow-soft"><p class="font-semibold text-slate-900">Joseph Francis</p><p class="text-sm mt-2">"I have no hesitation in recommending this place."</p></div>
+          <div class="reveal glass rounded-2xl p-6 shadow-soft"><p class="font-semibold text-slate-900">K.P. John Kutty</p><p class="text-sm mt-2">"The ambience is also good with neat and air conditioned waiting area."</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24">
+      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-8">
+        <div class="reveal glass rounded-3xl p-8 shadow-soft">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Contact Us</h2>
+          <div class="space-y-4 text-slate-700">
+            <p><span class="font-semibold">📍 Address</span><br/>CC43/219A, Kalavath Rd<br/>Kesaveeyam, Palarivattom<br/>Ernakulam, Kerala 682025</p>
+            <p><span class="font-semibold">📞 Phone</span><br/><a href="tel:04842340877" class="text-brandTeal">0484 234 0877</a></p>
+            <p><span class="font-semibold">🕘 Working Hours</span><br/>Mon – Sat : 9:00 AM – 7:00 PM</p>
+          </div>
+        </div>
+        <div class="reveal rounded-3xl overflow-hidden shadow-soft ring-2 ring-brandTeal/20 hover:ring-brandTeal/50 transition duration-300">
+          <iframe title="Clinic location map" class="w-full h-full min-h-[350px]" loading="lazy" src="https://maps.google.com/maps?q=Palarivattom%2C%20Ernakulam&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative overflow-hidden bg-slate-900 text-slate-200 py-14">
+    <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_20%,#0fb9b1_0%,transparent_35%),radial-gradient(circle_at_80%_20%,#60a5fa_0%,transparent_30%)]"></div>
+    <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
+      <div><p class="font-semibold text-white">Dr Winston's Smile Design</p><p class="mt-2">Premium dental clinic in Palarivattom, Ernakulam.</p></div>
+      <div><p class="font-semibold text-white">Quick Links</p><ul class="mt-2 space-y-1"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li></ul></div>
+      <div><p class="font-semibold text-white">Services</p><ul class="mt-2 space-y-1"><li>Smile Design</li><li>Dental Implants</li><li>Cosmetic Dentistry</li></ul></div>
+      <div><p class="font-semibold text-white">Contact</p><p class="mt-2">0484 234 0877<br/>Ernakulam, Kerala</p><p class="mt-3">🔵 🟢 📸</p></div>
+    </div>
+    <p class="relative text-center text-xs text-slate-300 mt-10">© Dr Winston's Smile Design Dental Care</p>
+  </footer>
+
+  <a href="https://wa.me/914842340877" target="_blank" class="fixed bottom-24 right-6 w-14 h-14 rounded-full bg-green-500 text-white shadow-xl flex items-center justify-center text-2xl hover:scale-110 transition" aria-label="Chat on WhatsApp">🟢</a>
+  <a href="tel:04842340877" class="fixed bottom-8 right-6 w-14 h-14 rounded-full bg-blue-500 text-white shadow-xl flex items-center justify-center text-2xl hover:scale-110 transition" aria-label="Call clinic">📞</a>
+
+  <div id="lightbox" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-[90] p-6">
+    <img id="lightboxImg" class="max-w-5xl w-full rounded-2xl" alt="Gallery enlarged view" />
+  </div>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    window.addEventListener('load', () => {
+      gsap.to('#loader', {
+        opacity: 0,
+        duration: 0.6,
+        onComplete: () => document.getElementById('loader').style.display = 'none'
+      });
+    });
+
+    gsap.utils.toArray('.reveal').forEach((el, i) => {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        delay: i % 4 * 0.05,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%'
+        }
+      });
+    });
+
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      ScrollTrigger.create({
+        trigger: counter,
+        start: 'top 85%',
+        once: true,
+        onEnter: () => {
+          const target = parseFloat(counter.dataset.target);
+          gsap.to({ val: 0 }, {
+            val: target,
+            duration: 2,
+            onUpdate: function () {
+              const value = this.targets()[0].val;
+              counter.textContent = target % 1 !== 0 ? value.toFixed(1) : Math.floor(value) + '+';
+            }
+          });
+        }
+      });
+    });
+
+    document.querySelectorAll('#gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        document.getElementById('lightboxImg').src = img.src;
+        document.getElementById('lightbox').classList.remove('hidden');
+        document.getElementById('lightbox').classList.add('flex');
+      });
+    });
+    document.getElementById('lightbox').addEventListener('click', () => {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox').classList.remove('flex');
+    });
+
+    const gradientBg = document.getElementById('gradientBg');
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      gradientBg.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(15,185,177,.25), transparent 32%), radial-gradient(circle at ${100-x}% 10%, rgba(88,166,255,.22), transparent 35%), linear-gradient(120deg, #ffffff 0%, #edf6ff 45%, #f6fffd 100%)`;
+    });
+  </script>
+</body>
+</html>
